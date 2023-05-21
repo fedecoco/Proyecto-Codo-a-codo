@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- JS  -->
+    <script src="./java/index.js"></script>
+    
 
     <title>Parrilla</title>
 </head>
@@ -28,10 +31,10 @@
     <header>
         <h1 data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">Parrilla Don Pepito</h1>
+        data-aos-duration="2000">Parrilla CodoACodo</h1>
         <!-- Menu Hamburgesa-->
         <nav id="inicio" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"> Parrilla Don Pepito</a>
+            <a class="navbar-brand" href="#"> El sabor de compartir en familia...</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#inicio"">Inicio</a>
+                        <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
                     <li class=" nav-item">
                             <a class="nav-link" href="#menu">Menú</a>
@@ -89,44 +92,261 @@
             <input type="submit" value="Reservar">
         </form>
     </section>
-
+    <h2 class="text-center h1">Menu</h2>
     <!--Menu de Platos -->
-
+    <div class="flex">
     <section id="menu">
-        <h2><a href="#inicio"> Menu</a></h2>
         <table>
             <thead>
                 <!--Descripcion de los platos -->
                 <tr>
-                    <th>Plato</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
+                    <th>ENTRADAS</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Albondigas gourmet</td>
+                    <td>$1100</td>
+                    <td>$1900</td>
+
+                </tr>
+                <tr>
+                    <td>Papas a la provenzal</td>
+                    <td>$1000</td>
+                    <td>$1700</td>
+                </tr>
+                <tr>
+                    <td>Nachos con cheddar</td>
+                    <td>$900</td>
+                    <td>$1700</td>
+                </tr>
+                <tr>
+                    <td>Croquetas de coliflor</td>
+                    <td>$1200</td>
+                    <td>$2200</td>
+                </tr>
+                <tr>
+                    <td>Pastel de pollo</td>
+                    <td>$1300</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Tortilla de papa</td>
+                    <td>$1500</td>
+                    <td>$2300</td>
+                </tr>
+                <tr>
+                    <td>Omelette</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Papas rellenas</td>
+                    <td>$1000</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Hummus de calabaza</td>
+                    <td>$900</td>
+                    <td>$1600</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <section id="menu">
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >PLATOS PRINCIPALES</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                    
                 </tr>
             </thead>
             <!--Platos -->
             <tbody>
                 <tr>
                     <td>Asado</td>
-                    <td>Corte de carne de res a la parrilla</td>
+                    <td>$2000</td>
+                    <td>$3600</td>
+
+                </tr>
+                <tr>
+                    <td>Vacio</td>
+                    <td>$2500</td>
+                    <td>$4500</td>
+                </tr>
+                <tr>
+                    <td>Bife de Chorizo</td>
+                    <td>$2800</td>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <td>Mollejas</td>
+                    <td>$1900</td>
+                    <td>$3100</td>
+                </tr>
+                <tr>
+                    <td>Chinchulines</td>
+                    <td>$1200</td>
                     <td>$2000</td>
                 </tr>
-
+                <tr>
+                    <td>Riñon</td>
+                    <td>$1200</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Pollo</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
                 <tr>
                     <td>Chorizo</td>
-                    <td>Salchicha de cerdo a la parrilla</td>
-                    <td>$800</td>
+                    <td>$600</td>
+                    <td>$1000</td>
                 </tr>
-
                 <tr>
-                    <td>Mix Achuras</td>
-                    <td>Órganos de res a la parrilla</td>
-                    <td>$1200</td>
+                    <td>Morcilla</td>
+                    <td>$600</td>
+                    <td>$1000</td>
                 </tr>
-
             </tbody>
         </table>
     </section>
+    <section id="menu">
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >BEBIDAS</th>
+                    <th>Chica</th>
+                    <th>Grande</th>
+                    
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Gaseosa</td>
+                    <td>$600</td>
+                    <td>$1000</td>
 
+                </tr>
+                <tr>
+                    <td>Agua</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Limonada MyJ</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Limonada Maracuya</td>
+                    <td>$1100</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Agua con gas</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Jugo Saborizado</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Cerveza</td>
+                    <td>$900</td>
+                    <td>$1600</td>
+                </tr>
+                <tr>
+                    <td>Vino</td>
+                    <td>$1500</td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td>Champagne</td>
+                    <td>$2300</td>
+                    <td>$4000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="menu">
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >POSTRES</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Queso y dulce</td>
+                    <td>$500</td>
+                    <td>$800</td>
+
+                </tr>
+                <tr>
+                    <td>Flan casero</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Budin de pan</td>
+                    <td>$700</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Helado</td>
+                    <td>$700</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>$1200</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Torta manzana</td>
+                    <td>$800</td>
+                    <td>$1400</td>
+                </tr>
+                <tr>
+                    <td>Tiramisu</td>
+                    <td>$1000</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Manzana Asada</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Torta Ricota</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
     <section id="contacto">
         <h2><a href="#inicio">Contacto</a></h2>
         <form action="#" method="post">
@@ -168,6 +388,7 @@
         });
     </script>
 
+<!-- AOS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

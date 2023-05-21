@@ -66,17 +66,29 @@
     font-family: 'Nunito', sans-serif;;
     padding: 20px;
   }
+
+  section.menu{
+    width: 50%;
+  }
   
   table {
     border-collapse: collapse;
     width: 100%;
   }
   
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   table th,
   table td {
     padding: 10px;
     text-align: left;
+    
   }
+
+
   
   table th {
     background-color: #333;
@@ -152,6 +164,7 @@
   section#contacto {
     background-color: #d6f7e1;
     padding: 20px;
+    margin-top: 30px;
   }
   
   form {
