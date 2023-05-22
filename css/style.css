@@ -46,7 +46,6 @@ nav ul li a:hover {
 
 /* Estilos para el carrusel */
 #carrusel {
-<<<<<<< HEAD
     margin: 0 auto;
     max-width: 100%;
     background-color: #001b00;
@@ -198,7 +197,6 @@ nav ul li a:hover {
     height: 150px;
     margin-bottom: 20px;
   }
-=======
   margin: 0 auto;
   max-width: 100%;
   background-color: #001b00;
@@ -207,7 +205,6 @@ nav ul li a:hover {
 
 .carrusel-item {
   text-align: center;
->>>>>>> 48a4ef9750a0a361e17f869b8346d31744c24512
   
 }
 
