@@ -31,13 +31,14 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
+  vertical-align: middle;
 }
 
 nav ul li a {
   font-family: 'Nunito', sans-serif;;
   color: #fff;
-  text-decoration: none;
+  text-decoration:none;
 }
 
 nav ul li a:hover {
@@ -46,170 +47,19 @@ nav ul li a:hover {
 
 /* Estilos para el carrusel */
 #carrusel {
-    margin: 0 auto;
-    max-width: 100%;
-    background-color: #001b00;
-    height: 80%;
-  }
-  
-  .carrusel-item {
-    text-align: center;
-    
-  }
-  
-  .carrusel-item img {
-    max-width: 100%;
-    height: 110vh;
-  }
-  
-  section {
-    font-family: 'Nunito', sans-serif;;
-    padding: 20px;
-  }
-
-  section.menu{
-    width: 50%;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  table th,
-  table td {
-    padding: 10px;
-    text-align: left;
-    
-  }
-
-
-  
-  table th {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  input[type="text"],
-  input[type="date"],
-  input[type="time"],
-  input[type="number"],
-  input[type="submit"] {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #555;
-  }
-  h2 a {
-    font-family: 'Nunito', sans-serif;
-    color: #001b00;
-  }
-  
-  /* Estilos específicos para una parrilla */
-  header {
-    background-color: #004934;
-  }
-  
-  nav ul li a:hover {
-    border-bottom: 2px solid #fff;
-  }
-  
-  section#reservas {
-    
-    background-color: #126c46;
-  }
-  
-  section#menu {
-    background-color: #d5ffeb;
-  }
-  
-  table th {
-    background-color: #004934;;
-  }
-  
-  table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  input[type="submit"] {
-    background-color:  #086711;;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #555;
-  }
-
-  section#contacto {
-    background-color: #d6f7e1;
-    padding: 20px;
-    margin-top: 30px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  form label {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"] {
-    margin-bottom: 10px;
-  }
-  
-  form textarea {
-    height: 150px;
-    margin-bottom: 20px;
-  
   margin: 0 auto;
   max-width: 100%;
   background-color: #001b00;
   height: 80%;
-  }∫
+}
 
 .carrusel-item {
   text-align: center;
-  
 }
 
 .carrusel-item img {
   max-width: 100%;
+  height: 110vh;
 }
 
 section {
@@ -217,9 +67,19 @@ section {
   padding: 20px;
 }
 
+section.menu {
+  width: 50%;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 table th,
@@ -251,15 +111,20 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-input[type="submit"] {
+input[type="submit"]{
   background-color: #333;
   color: #fff;
   cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 input[type="submit"]:hover {
   background-color: #555;
 }
+
 h2 a {
   font-family: 'Nunito', sans-serif;
   color: #001b00;
@@ -275,7 +140,6 @@ nav ul li a:hover {
 }
 
 section#reservas {
-  
   background-color: #126c46;
 }
 
@@ -292,7 +156,13 @@ table tr:nth-child(even) {
 }
 
 input[type="submit"] {
-  background-color:  #086711;;
+  background-color: #004934;;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 input[type="submit"]:hover {
@@ -302,9 +172,10 @@ input[type="submit"]:hover {
 section#contacto {
   background-color: #d6f7e1;
   padding: 20px;
+  margin-top: 30px;
 }
 
-form {
+form{
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -333,10 +204,11 @@ form input[type="email"] {
 form textarea {
   height: 150px;
   margin-bottom: 20px;
+  background-color: #fff; /* Agregado para cambiar el color de fondo del mensaje */
 }
 
 input[type="submit"] {
-  background-color:  #004934;;
+  background-color: #004934;;
   color: #fff;
   cursor: pointer;
   padding: 10px 20px;
