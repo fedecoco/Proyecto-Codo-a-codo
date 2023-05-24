@@ -25,5 +25,29 @@ const form=document.getElementById("formulario")
 
     
     errores.textContent = mensajesError.join(". ");
-    
+   
 })
+
+
+fetch("https://jsonplaceholder.typicode.com/comments?_limit=6")
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(comentario => {
+      const div = document.createElement("div");
+
+      const nombre = document.createElement("p");
+      nombre.innerText = "Nombre: " + comentario.name;
+      div.appendChild(nombre);
+
+      const email = document.createElement("p");
+      email.innerText = "Email: " + comentario.email;
+      div.appendChild(email);
+
+      const cuerpo = document.createElement("p");
+      cuerpo.innerText = comentario.body;
+      div.appendChild(cuerpo);
+
+      div.classList.add("comentario");
+      api.appendChild(div);
+    });
+  });
