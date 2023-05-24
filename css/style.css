@@ -252,10 +252,13 @@ input[type="submit"]:hover {
 }
 
 /* Estilos para los elementos dentro de cada comentario */
-.comentario p {
-  margin: 0;
+.comentario {
+  white-space: pre-wrap;
+  width: 100%; 
+  display: block; 
+  margin: 0; 
+  padding: 0; 
 }
-
 /* Estilos para resaltar nombre y email */
 .comentario p.nombre {
   font-size: 18px;
