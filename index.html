@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- Codidigo carrousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- JS  -->
+    
+    
+
+    <title>Parrilla</title>
+</head>
+
+<body>
+    <header>
+        <h1 data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Parrilla CodoACodo</h1>
+        <!-- Menu Hamburgesa-->
+        <nav id="inicio" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><p class="slogan">El sabor de compartir en familia...</p> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class=" nav-item">
+                            <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#reservas">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reseñas">Reseñas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrousel de fotos-->
+
+    <section id="carrusel">
+        <div class="carrusel-item">
+            <img src="./img/asadotira.jpg" width="100%"alt="Asado">
+        </div>
+        <div class="carrusel-item">
+            <img src="./img/tipos-chorizos-1900Wx500H.jpg" width="100%" alt="Chorizo">
+        </div>
+        <div class="carrusel-item">
+            <img src="./img/mollejas-chinchulines.webp" width="100%" alt="Achuras">
+        </div>
+    </section>
+
+    <!--Reservas de Mesa -->
+
+    <section id="reservas">
+        <h2 class="text-center"><a href="#inicio"> Reservas</a></h2>
+        <form action="" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="20" required>
+
+            <input type="submit" value="Reservar">
+        </form>
+        <div id="error"></div>
+    </section>
+    
+
+    <!--Menu de Platos -->
+   
+    <section id="menu" >
+        <h2 class="text-center"><a href="#inicio">Menu</a> </h2>
+        
+        <table class="table">
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th>ENTRADAS</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Albondigas gourmet</td>
+                    <td>$1100</td>
+                    <td>$1900</td>
+
+                </tr>
+                <tr>
+                    <td>Papas a la provenzal</td>
+                    <td>$1000</td>
+                    <td>$1700</td>
+                </tr>
+                <tr>
+                    <td>Nachos con cheddar</td>
+                    <td>$900</td>
+                    <td>$1700</td>
+                </tr>
+                <tr>
+                    <td>Croquetas de coliflor</td>
+                    <td>$1200</td>
+                    <td>$2200</td>
+                </tr>
+                <tr>
+                    <td>Pastel de pollo</td>
+                    <td>$1300</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Tortilla de papa</td>
+                    <td>$1500</td>
+                    <td>$2300</td>
+                </tr>
+                <tr>
+                    <td>Omelette</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Papas rellenas</td>
+                    <td>$1000</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Hummus de calabaza</td>
+                    <td>$900</td>
+                    <td>$1600</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >PLATOS PRINCIPALES</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Asado</td>
+                    <td>$2000</td>
+                    <td>$3600</td>
+
+                </tr>
+                <tr>
+                    <td>Vacio</td>
+                    <td>$2500</td>
+                    <td>$4500</td>
+                </tr>
+                <tr>
+                    <td>Bife de Chorizo</td>
+                    <td>$2800</td>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <td>Mollejas</td>
+                    <td>$1900</td>
+                    <td>$3100</td>
+                </tr>
+                <tr>
+                    <td>Chinchulines</td>
+                    <td>$1200</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Riñon</td>
+                    <td>$1200</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Pollo</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Chorizo</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Morcilla</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >BEBIDAS</th>
+                    <th>Chica</th>
+                    <th>Grande</th>
+                    
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Gaseosa</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+
+                </tr>
+                <tr>
+                    <td>Agua</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Limonada MyJ</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Limonada Maracuya</td>
+                    <td>$1100</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Agua con gas</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Jugo Saborizado</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Cerveza</td>
+                    <td>$900</td>
+                    <td>$1600</td>
+                </tr>
+                <tr>
+                    <td>Vino</td>
+                    <td>$1500</td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td>Champagne</td>
+                    <td>$2300</td>
+                    <td>$4000</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <!--Descripcion de los platos -->
+                <tr>
+                    <th >POSTRES</th>
+                    <th>1/2 Porción</th>
+                    <th>Porción</th>
+                    
+                    
+                </tr>
+            </thead>
+            <!--Platos -->
+            <tbody>
+                <tr>
+                    <td>Queso y dulce</td>
+                    <td>$500</td>
+                    <td>$800</td>
+
+                </tr>
+                <tr>
+                    <td>Flan casero</td>
+                    <td>$900</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Budin de pan</td>
+                    <td>$700</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Helado</td>
+                    <td>$700</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>$1200</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Torta manzana</td>
+                    <td>$800</td>
+                    <td>$1400</td>
+                </tr>
+                <tr>
+                    <td>Tiramisu</td>
+                    <td>$1000</td>
+                    <td>$1800</td>
+                </tr>
+                <tr>
+                    <td>Manzana Asada</td>
+                    <td>$600</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Torta Ricota</td>
+                    <td>$400</td>
+                    <td>$700</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </section>
+   
+    <section id="contacto">
+        <h2><a href="#inicio">Contacto</a></h2>
+        <form action="" method="get" id="formulario">
+            <label for="nombreContacto">Nombre:</label>
+            <input type="text" id="nombreContacto" name="nombreContacto" >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" ></textarea>
+
+            <input id="enviarForm"  type="submit" value="Enviar">
+        <div id="errores"></div>
+        </form>
+
+        
+        
+    </section>
+    <section id="reseñas">
+        <h2 class="text-center"><a href="#inicio">Reseñas</a></h2>
+        <div><p>Aquí puedes ver algunas reseñas de nuestros clientes.</p></div>
+        <div id="api" class="api">
+            
+        </div>
+    </section>
+    
+    <!--Pie de pagina -->
+    <footer>
+
+        <p>Restaurante de parrilla - Todos los derechos reservados &copy; 2023</p>
+
+    </footer>
+
+    <!-- Codigo Java Script-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- Boostrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carrusel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    <script src="javascript/index.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+    
+    </html>
