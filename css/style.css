@@ -284,12 +284,20 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-.comentario {
-  white-space: pre-wrap;
-}
+
 
 @media (max-width: 720px) {
   #carrusel {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .api {
+    display: flex;
+    flex-direction: column;
+  }
+  .comentario {
+    width: 100%;
   }
 }
