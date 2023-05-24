@@ -278,3 +278,9 @@ input[type="submit"]:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media (max-width: 720px) {
+  #carrusel {
+    display: none;
+  }
+}
